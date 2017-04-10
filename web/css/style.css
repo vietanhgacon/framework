@@ -1,0 +1,697 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 1, 2017, 11:59:50 AM
+    Author     : DaiPhongPC
+*/
+@font-face{
+    font-family: asap-regular;
+    src: url('../font/Asap-Regular.otf');
+}
+@font-face{
+    font-family: asap-bold;
+    src: url('../font/Asap-Bold.otf');
+}
+body{
+    font-family: asap-regular, asap-bold;
+    font-size: 14px;
+    color: #7f7f7f;
+    min-width: 960px;
+    background: rgb(235,235,235);
+    margin:0px;
+
+}
+#content{
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+.main{
+    width: 1110px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 13px;
+    background: white;
+}
+
+.main.footer{
+    background: rgb(225,225,225);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.main-content{
+    margin: 15px;
+
+}
+.header-logo{
+    float:left;
+}
+.header-search{
+    float:left;
+    margin:0px 95px;
+    line-height: 84px;
+}
+.header-search .header-search-box{
+    width: 370px;
+    border-left: 1px solid #191818;
+    border-top: 1px solid #191818;
+    border-bottom: 1px solid #191818;
+    border-right: none;
+    padding: 9px;
+    font-size: 15px;
+}
+
+.header-search .header-search-button{
+    background: url('../images/icon-search.gif');
+    width: 36px;
+    height: 37px;
+    border: 1px solid red;
+    padding: 12px;
+    margin-left: -3px;
+    cursor: pointer;
+}
+.header-minimenu{
+    display: inline-block;
+    float: right;
+    line-height: 84px;
+}
+.header-minimenu h3{
+    margin: 0px;
+    float: left;
+}
+.header-minimenu h3 a{
+    text-decoration: none;
+    color: rgb(25,24,24);
+}
+.cart-cover{
+    width: 26px;
+    float: left;
+    height: 34px;
+    margin: 30px 0 0 8px;
+    position: relative;
+}
+.header-minimenu .minimenu-cart{
+   
+   display: inline;
+}
+.minimenu-cart .icon-cart{
+    background: url('../images/icon-cart.png');
+    width: 25px;
+    height: 23px;
+    display: block;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+.minimenu-cart .cart-number{
+    width: 18px;
+    height: 18px;
+    background: #fd3620;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    line-height: 18px;
+}
+
+.main-menu .menu-cover{
+    list-style-type: none;
+    float: left;
+}
+.menu-info{
+    float: right;
+    line-height: 87px;
+}
+.menu-info a{
+    margin-left: 16px;
+}
+.menu-info .menu-info-icon{
+    float: left;
+}
+.menu-info .menu-info-detail{
+    float: left;
+    line-height: normal;
+    margin-top: 22px;
+    margin-left: 10px;
+}
+.menu-info .menu-info-detail b{
+    font-size: 22px;
+    color: rgb(25,24,24);
+}
+.menu-submenu{
+   position: absolute;
+   -webkit-padding-start: 0px;
+   z-index: 1000;
+   display: none;
+   margin-left: -20px;
+   margin-top: 20px;
+}
+.menu-submenu li{
+    text-align: left;
+    background: white;
+    min-width: 180px;
+}
+.menu-submenu li:hover .menu-submenu{
+    display: block;
+}
+.main-menu .menu-cover li{
+    display: inline-block;
+    padding: 20px 20px;
+    text-align: center;
+    position: relative;
+}
+.main-menu .menu-cover li:hover{
+    background:rgb(237,28,36);
+    color:white;
+    transition: 0.3s;
+}
+.main-menu .menu-cover li:hover .menu-submenu{
+    display: block;
+}
+
+.main-menu .menu-cover li a{
+    text-decoration: none;
+    color: rgb(37,37,37);
+    font-weight: bold;
+    font-size: 17px
+}
+
+.nav-bar{
+    background: rgb(225,225,225);
+    padding: 20px 35px 15px 35px;
+    font-size: 13px;
+}
+
+.product-container{
+    margin: 30px 15px;
+}
+.column-1{
+    float: left;
+    width: 666px;
+}
+.column-2{
+    width: 383px;
+    float:right;
+}
+.image-thumbmail{
+    width: 126px;
+    float:left;
+}
+.image-detail{
+    width: 488px;
+    margin:0px 26px;
+    float:right;
+}
+.button-next,.button-prev{
+    cursor: pointer;
+}
+.image-thumbmail-container ul{
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+    height: 440px;
+    overflow: hidden;
+}
+.image-thumbmail-container ul li.active{
+    -webkit-transition: all 2s; 
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+    display: block;
+}
+
+.image-thumbmail-container ul li{
+    display: none;
+
+}
+.thumb img{
+    margin: 9px 0px;
+}
+.clear{
+    clear: both;
+}
+
+.product-title{
+    font-size: 32px;
+    margin-top: -3px;
+}
+
+.product-code{
+    margin-top: 10px;
+
+}
+
+.product-code span{
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+.product-price{
+    margin-top: 10px;
+}
+.product-price span{
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.product-properties{
+    margin-top: 34px;
+    border-top: solid 1px #ededed;
+}
+
+.properties-item{
+    display: inline-block;
+    margin-top: 23px;
+}
+.properties-title{
+    float:left;
+    width: 30px;
+}
+.properties-title span{
+    line-height: 42px;
+    font-size: 17px;
+}
+
+.product-properties-picker{
+    float: right;
+
+}
+
+.product-properties-picker a{
+    display: inline-block;
+    border: 1px solid #ededed;
+    text-decoration: none;
+    color: #ededed;
+    margin: 0px 0px 0px 10px;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    transition: 0.3s;
+}
+.product-properties-picker a:hover{
+    border: 1px solid red;
+    color: red;
+}
+
+.product-properties-picker a span{
+    line-height: 42px;
+}
+
+.properties-checkbox{
+    display:inline-block;
+    float:right;
+    width: 200px;
+    margin-left: 40px;
+}
+
+.properties-checkbox input{
+    
+    display: inline-block;
+}
+.icheckbox_square-grey{
+    float: left;
+}
+.properties-checkbox .properties-checkbox-title{
+    
+    display: inline-block;
+    width: 170px;
+    margin-left: 5px;
+}
+#properties-choose{
+    border: 1px solid red;
+    color: red;
+}
+
+.product-quantity{
+    margin-top: 20px;
+}
+
+.properties-input{
+    display: inline-block;
+    line-height: 63px;
+    width: 81px;
+    border: 1px solid #ededed;
+    margin: 0px 0px 0px 10px;
+    font-size: 17px;
+    padding: 0px 10px;
+}
+.properties-title-quantity{
+    width: 30px;
+    float: left;
+}
+.properties-title-quantity span{
+    font-size: 17px;
+    line-height: 63px;
+}
+
+.btnAddcart{
+    width: 225px;
+    display: inline-block;
+    background: #ed1c24;
+    color:white;
+    border: solid 1px #ed1c24;
+    text-transform: uppercase;
+    line-height: 63px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.product-advantage{
+    border-top: solid 1px #ededed;
+    margin-top: 30px;
+    border-bottom: solid 1px #ededed;
+}
+
+.advantage-list{
+    list-style-image: url('../images/icon-tick.png');
+    -webkit-padding-start: 23px;
+}
+
+.advantage-list li{
+    margin-top: 13px;
+    padding-left: 15px;
+    color: rgb(137,137,137);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.product-review{
+    margin: 18px 0px;
+
+}
+.product-review a{
+    color: rgb(70,70,70);
+    font-weight: bold;
+}
+.table-detail{
+    width: 100%;
+}
+.table-detail thead tr{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.table-detail thead tr th{
+    text-align: left;
+}
+.table-detail thead tr th button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 0px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+.table-detail thead tr th button:hover {
+    color: rgb(237,28,36);
+}
+/* Style the tab */
+
+/* Create an active/current tablink class */
+.table-detail thead tr th button.active {
+    color: rgb(237,28,36);
+}
+
+/* Style the tab content */
+.detail-tab-content {
+    display: none;
+    margin-top: 20px;
+    transition: 0.3;
+}
+.detail-tab-content.active{
+    display:block; 
+}
+
+.table-detail tbody tr td{
+    border-top: solid 1px #ededed;
+    border-bottom: solid 1px #ededed;
+}
+
+.question-title{
+    margin:0px;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(17,17,17);
+}
+.product-question{
+    padding: 25px 0px;
+    border-bottom: solid 1px #ededed;
+}
+.question-button{
+    margin-top: 10px;
+}
+.question-button button{
+    background: rgb(25,24,24);
+    border:solid 1px #191818;
+    color:white;
+    padding: 13px 27px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+}
+.product-others{
+    padding: 34px 0px;
+}
+
+.others-title{
+    width: 237px;
+    float: left;
+    border-right: solid 1px #ededed;
+    padding-right: 23px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.others-title h1{
+    color:rgb(37,37,37);
+    font-weight: bold;
+    font-size: 53px;
+    margin: 0px;
+}
+.others-title h4{
+    font-weight: normal;
+    color: rgb(37,37,37);
+    font-size: 17px;
+    margin:0px;
+}
+/*custom css*/
+.slide-holder{
+    float:left;
+    margin:0 auto;
+}
+.slide-container{
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    margin-left: 30px;
+}
+.slide-stage{
+    position: absolute;
+}
+.slide-image {
+    float:left;
+    width:180px;
+    margin: 0px 40px;
+    text-align: center;
+}
+
+.slide-image .list-center{
+    text-align: center;
+}
+
+.slide-image .list-center a{
+    font-size: 17px;
+    color: rgb(17,17,17);
+    text-decoration: none;
+}
+.slide-image .list-center .price span{
+    color:rgb(237,28,36);
+    font-weight: bold;
+    font-size: 21px;
+}
+
+
+.slide-pager{
+    position:relative;
+}
+.slide-control-prev {
+    position: absolute;
+    cursor: pointer;
+}
+.slide-control-next{
+    position: absolute;
+    right: -30px;
+    cursor: pointer;
+}
+/*end custom css*/
+/*.others-list{
+    list-style: none;
+    display: block;
+    -webkit-padding-start: 20px;
+    overflow: hidden;
+}
+.others-list-container{
+    overflow: hidden;
+    list-style-type: none;
+    display: block;
+}
+.others-list .others-item{
+    float: left;
+    width: 30%;
+    margin: 0px 3px;
+}
+.others-list .arrow-left{
+    float: left;
+}
+.others-list .arrow-right{
+    float: left;
+}
+.others-list li .list-center{
+    text-align: center;
+}
+.others-list li .list-center h3{
+    font-size: 17px;
+    color: rgb(17,17,17);
+}
+.others-list li .list-center .price span{
+    color:rgb(237,28,36);
+    font-weight: bold;
+    font-size: 21px;
+}
+*/
+footer{
+    background-color: rgb(225,225,225);
+}
+.footer-banner{
+    margin:-30px 0 0 0;
+    background: rgb(237,28,36);
+}
+
+.footer-join{
+    height: 264px;
+    background: url('../images/footer-banner.png');
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-join .join-title{
+    color:white;
+    text-transform: uppercase;
+    font-size: 29px;
+
+}
+
+.footer-join .input-text-join{
+    width: 435px;
+    padding: 30px;
+    border-radius: 5px 0px 0px 5px;
+    border: solid 1px #ededed;
+    font-size: 22px;
+}
+
+.footer-join .input-button-join{
+    margin-left: -4px;
+    background: rgb(25,24,24);
+    border:solid 1px #191818;
+    padding:31px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    font-size: 23px;
+}
+.footer-description{
+    float: left;
+    width: 380px;
+    margin-right: 20px;
+
+}
+.footer-description img{
+    background-color: rgb(225,225,225);
+}
+
+.footer-description p{
+    margin-left:26px;
+    color: rgb(37,37,37);
+}
+
+.footer-description .footer-needhelp{
+    margin-left:26px;
+    margin-top: 20px;
+}
+
+.footer-needhelp .needhelp-title img{
+    float:left;
+}
+
+.footer-needhelp .needhelp-title span{
+    line-height: 24px;
+    font-weight: bold;
+    margin-left: 6px;
+    font-size: 17px;
+    color: rgb(37,37,37);
+}
+
+
+.footer-needhelp .needhelp-phone span{
+    font-weight: bold;
+    font-size: 38px;
+}
+.footer-menu{
+    float:left;
+    margin-top: 20px;
+    width: 710px;
+}
+.footer-menu .menu-column{
+    margin-left: 28px;
+    width: 29%;
+    display: inline-block;
+    float: left;
+}
+.footer-menu .menu-column .column-title{
+    color: rgb(37,37,37);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.footer-menu .menu-column ul{
+    -webkit-padding-start: 0px;
+    list-style-type: none;
+}
+.footer-menu .menu-column ul li{
+    margin-top: 17px;
+
+}
+.footer-menu .menu-column ul li a{
+    color: rgb(37,37,37);
+    text-decoration: none;
+
+}
+
+.footer-copyright{
+    line-height: 50px;
+    text-align: center;
+    background: white;
+    margin: 0px;
+}
+
+
+
