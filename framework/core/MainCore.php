@@ -9,20 +9,22 @@ class MainCore
     {
         self::init();
 
-        self::autoload();
-
         self::dispatch();
     }
+    /*
+     * Hàm định nghĩa hằng
+     */
 
     private static function init()
     {
-// Define path constants
+// Khai báo hằng quan trọng
 
-        define("_DS", DIRECTORY_SEPARATOR); //return /
+        define("_DS", DIRECTORY_SEPARATOR);
 
         define("_ROOT", getcwd()._DS);
 
         define("_APP_PATH", _ROOT.'app'._DS);
+        
 
         define("_FRAMEWORK_PATH", _ROOT."framework"._DS);
 
@@ -42,81 +44,41 @@ class MainCore
 
         define("_UPLOAD_PATH", _PUBLIC_PATH."uploads"._DS);
 
-// Load configuration file
-        $GLOBALS['config'] = include _CONFIG_PATH."config.php";
-// Define platform, controller, action, for example:
-// framework.dev/controller/action/param
-        $arrURI            = explode('/', $_SERVER['REQUEST_URI']);
+        define("_CURR_CONTROLLER_PATH", _CONTROLLER_PATH);
+        //load tham số config, lưu vào một biến global
 
-//define("_PLATFORM", isset($_REQUEST['p']) ? $_REQUEST['p'] : 'home');
+        $GLOBALS['config'] = include _CONFIG_PATH."config.php";
+
+        //xác định controller và action tương ứng
+        //Bước 1: lấy ra URI và chuyển về mảng
+
+        $arrURI = explode('/', $_SERVER['REQUEST_URI']);
 
         define("_CONTROLLER",
             (isset($arrURI[1]) && $arrURI[1] != null) ? ucfirst($arrURI[1]) : $GLOBALS['config']['base_controller']);
 
+
         define("_ACTION",
             (isset($arrURI[2]) && $arrURI[2] != null) ? ucfirst($arrURI[2]) : 'Index');
 
-
-        define("_CURR_CONTROLLER_PATH", _CONTROLLER_PATH);
-
-
-        define("_CURR_VIEW_PATH", _VIEW_PATH.$arrURI[1]._DS);
-
-
-// Load core classes
-        require _CORE_PATH."View.class.php";
-        require _CORE_PATH."Controller.class.php";
-
-        require _CORE_PATH."Loader.class.php";
-
-        require _DB_PATH."Mysql.class.php";
-
-        require _CORE_PATH."Model.class.php";
-
-
+        define("_CURR_VIEW_PATH", _VIEW_PATH.strtolower(_CONTROLLER)._DS);
+        
 // Start session
 
         session_start();
     }
 
-    private static function autoload()
-    {
-        spl_autoload_register(array(__CLASS__, 'load'));
-    }
-
-    private static function load($classname)
-    {
-        if (substr($classname, -10) == "Controller") {
-
-// Controller
-            if (file_exists(_CURR_CONTROLLER_PATH."$classname.class.php")) {
-
-                require_once _CURR_CONTROLLER_PATH."$classname.class.php";
-            } else {
-
-                
-                exit();
-            }
-        } else if (substr($classname, -5) == "Model") {
-
-// Model
-            if (file_exists(_MODEL_PATH."$classname.class.php")) {
-                require_once _MODEL_PATH."$classname.class.php";
-            } else {
-                echo "Can't find the Model file";
-                exit();
-            }
-        }
-    }
 
     private static function dispatch()
     {
-        $controller_name = _CONTROLLER."Controller";
+        
+        $controller_classname = '\\app\\controllers\\'._CONTROLLER."Controller";
 
         $action_name = "action"._ACTION;
+ 
+        $controller = new $controller_classname;
 
-        $controller = new $controller_name;
-        if (method_exists($controller_name, $action_name)) {
+        if (method_exists($controller_classname, $action_name)) {
             $controller->$action_name();
         } else {
             echo "Can't find the method in controller class";

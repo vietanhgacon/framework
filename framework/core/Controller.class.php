@@ -38,7 +38,9 @@ class Controller
         foreach ($params as $key => $value) {
             $$key = $value;
         }
+        
         $content = file_get_contents('app/views/'.strtolower(_CONTROLLER).'/'.$view.'.php');
+        
         include 'app/views/layout/'.$this->layout.'.php';
         
         
