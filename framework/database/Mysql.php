@@ -125,8 +125,8 @@ class Mysql {
      * @return $list an 2D array containing all result records
 
      */
-    public function getAll($sql) {
-
+    public function getAll($sql = '') {
+            
         $result = $this->query($sql);
 
         $list = array();
@@ -137,6 +137,7 @@ class Mysql {
         }
 
         return $list;
+        
     }
 
     /**

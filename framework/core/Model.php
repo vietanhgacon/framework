@@ -34,7 +34,7 @@ class Model{
 
         $this->db = new Mysql($dbconfig);
 
-        $this->table = $GLOBALS['config']['prefix'] . $table;
+        $this->table = $table;
 
         $this->getFields();
 
@@ -346,4 +346,9 @@ class Model{
 
     }
 
+
+    public function findAll(){
+        $query = "select * from ".$this->table." order by ".$this->fields['pk']." desc";
+        return $this->db->getAll($query);
+    }
 }

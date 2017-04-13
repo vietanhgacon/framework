@@ -6,7 +6,6 @@ return [
     'dbname' => 'laravel',
     'port' => '3306',
     'charset' => 'utf8_general_ci',
-    'prefix' => 'e4_',
     'base_controller' => 'Index',
     'url_form'=>'controller/action/id',
     'asset' => [
