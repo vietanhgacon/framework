@@ -6,25 +6,25 @@
         <div class="clear"></div>
         <div class="column-1">
             <div class="image-thumbmail">
-                <span class="button-prev"><img src="web/images/arrow_up.gif"/></span>
+                <span class="button-prev"><img src="/web/images/arrow_up.gif"/></span>
                 <div class="image-thumbmail-container" >
                     <ul id="image-scroller-verticle">
-                        <li class="active" id="item1"><a href="#" class="thumb" data-images="web/images/product-image.png" data-title="Picture 01"><img src="web/images/product-image-thumb.png"/></a></li>
-                        <li class="active" id="item2"><a class="thumb " href="#" data-images="web/images/product_img_01.gif" data-title="Picture 02"><img src="web/images/product-image-thumb.png"/></a></li>
-                        <li class="active" id="item3"><a class="thumb " href="#" data-images="web/images/product-image.png" data-title="Picture 03"><img src="web/images/product-image-thumb.png"/></a></li>
-                        <li id="item4"><a class="thumb" href="#" data-images="web/images/product-image.png" data-title="Picture 04"><img src="web/images/product-image-thumb.png"/></a></li>
-                        <li id="item5"><a class="thumb" href="#" data-images="web/images/product-image.png" data-title="Picture 05"><img src="web/images/product-image-thumb.png"/></a></li>
-                        <li id="item6"><a class="thumb" href="#" data-images="web/images/product_img_01.gif" data-title="Picture 06"><img src="web/images/product-image-thumb.png"/></a></li>
-                        <li id="item7"><a class="thumb" href="#" data-images="web/images/product-image.png" data-title="Picture 07"><img src="web/images/product-image-thumb.png"/></a></li>
-                        <li id="item8"><a class="thumb" href="#" data-images="web/images/product-image.png" data-title="Picture 08"><img src="web/images/product-image-thumb.png"/></a></li>
+                        <li class="active" id="item1"><a href="#" class="thumb" data-images="/web/images/product-image.png" data-title="Picture 01"><img src="/web/images/product-image-thumb.png"/></a></li>
+                        <li class="active" id="item2"><a class="thumb " href="#" data-images="/web/images/product_img_01.gif" data-title="Picture 02"><img src="/web/images/product-image-thumb.png"/></a></li>
+                        <li class="active" id="item3"><a class="thumb " href="#" data-images="/web/images/product-image.png" data-title="Picture 03"><img src="/web/images/product-image-thumb.png"/></a></li>
+                        <li id="item4"><a class="thumb" href="#" data-images="/web/images/product-image.png" data-title="Picture 04"><img src="/web/images/product-image-thumb.png"/></a></li>
+                        <li id="item5"><a class="thumb" href="#" data-images="/web/images/product-image.png" data-title="Picture 05"><img src="/web/images/product-image-thumb.png"/></a></li>
+                        <li id="item6"><a class="thumb" href="#" data-images="/web/images/product_img_01.gif" data-title="Picture 06"><img src="/web/images/product-image-thumb.png"/></a></li>
+                        <li id="item7"><a class="thumb" href="#" data-images="/web/images/product-image.png" data-title="Picture 07"><img src="/web/images/product-image-thumb.png"/></a></li>
+                        <li id="item8"><a class="thumb" href="#" data-images="/web/images/product-image.png" data-title="Picture 08"><img src="/web/images/product-image-thumb.png"/></a></li>
                     </ul>
 
                 </div>
-                <span class="button-next"><img src="web/images/arrow_down.gif"/></span>
+                <span class="button-next"><img src="/web/images/arrow_down.gif"/></span>
             </div>
             <div class="image-detail-container">
-                <a class="image-detail" href="web/images/product-image.png" title="Picture 01">
-                    <img src="web/images/product-image.png"/>
+                <a class="image-detail" href="/web/images/product-image.png" title="Picture 01">
+                    <img src="/web/images/product-image.png"/>
                 </a>
             </div>
         </div>
@@ -59,9 +59,9 @@
                     </div>
 
                     <div class="product-properties-picker">
-                        <a href="#"><img src="web/images/product-color-01.png"/></a>
+                        <a href="#"><img src="/web/images/product-color-01.png"/></a>
 
-                        <a href="#"><img src="web/images/product-color-01.png"/></a>
+                        <a href="#"><img src="/web/images/product-color-01.png"/></a>
 
                         <div class="properties-checkbox">
 
@@ -156,14 +156,14 @@
             </div>
             <div class="slide-holder">
                 <div class="slide-pager">
-                    <div class="slide-control-prev"><img src="web/images/arrow-left.png"/></div>
-                    <div class="slide-control-next"><img src="web/images/arrow-right.png"/></div>
+                    <div class="slide-control-prev"><img src="/web/images/arrow-left.png"/></div>
+                    <div class="slide-control-next"><img src="/web/images/arrow-right.png"/></div>
                 </div>
                 <div class="slide-container">
                     <div class="slide-stage">
                         <div class="slide-image">
                             <div class="list-center">
-                                <img src="web/images/product_img_01.gif">
+                                <img src="/web/images/product_img_01.gif">
                                 <h3><a href="#">AFL Team Jersey 2016 West Coast Eagle</a></h3>
                                 <div class="price">
                                     <span>$210.00</span>
@@ -171,7 +171,7 @@
                             </div></div>
                         <div class="slide-image">
                             <div class="list-center">
-                                <img src="web/images/product_img_01.gif">
+                                <img src="/web/images/product_img_01.gif">
                                 <h3><a href="#">AFL Team Jersey 2016 West Coast Eagle</a></h3>
                                 <div class="price">
                                     <span>$210.00</span>
@@ -179,7 +179,7 @@
                             </div></div>
                         <div class="slide-image">
                             <div class="list-center">
-                                <img src="web/images/product_img_01.gif">
+                                <img src="/web/images/product_img_01.gif">
                                 <h3><a href="#">AFL Team Jersey 2016 West Coast Eagle</a></h3>
                                 <div class="price">
                                     <span>$210.00</span>
@@ -187,7 +187,7 @@
                             </div></div>
                         <div class="slide-image">
                             <div class="list-center">
-                                <img src="web/images/product_img_01.gif">
+                                <img src="/web/images/product_img_01.gif">
                                 <h3><a href="#">AFL Team Jersey 2016 West Coast Eagle</a></h3>
                                 <div class="price">
                                     <span>$210.00</span>

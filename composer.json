@@ -5,19 +5,15 @@
     "homepage": "http://www.gemvietnam.com/",
     "type": "project",
     "license": "BSD-3-Clause",
-    "support": {
-        "source": "https://github.com/yiisoft/yii2"
-    },
     "require": {
         "php": ">=5.4.0"
     },
     "autoload": {
         "classmap": [
-            "framework/core/View.class.php",
-            "framework/core/Controller.class.php",
-            "framework/core/Loader.class.php",
-            "framework/database/Mysql.class.php",
-            "framework/core/Model.class.php",
+            "framework/core/View.php",
+            "framework/core/Controller.php",
+            "framework/database/Mysql.php",
+            "framework/core/Model.php",
             "framework/core/MainCore.php"
         ],
         "psr-4": {"app\\": "app/"}

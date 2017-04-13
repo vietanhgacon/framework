@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit745cfa768fe2cbb91acaa2077d71d037
+class ComposerStaticInit6cb8278a744a1214bfa163bf4da28738
 {
     public static $prefixLengthsPsr4 = array (
         'a' => 
@@ -21,22 +21,22 @@ class ComposerStaticInit745cfa768fe2cbb91acaa2077d71d037
     );
 
     public static $classMap = array (
-        'app\\controllers\\IndexController' => __DIR__ . '/../..' . '/app/controllers/IndexController.class.php',
-        'app\\model\\UserModel' => __DIR__ . '/../..' . '/app/models/UserModel.class.php',
-        'framework\\core\\Controller' => __DIR__ . '/../..' . '/framework/core/Controller.class.php',
-        'framework\\core\\Loader' => __DIR__ . '/../..' . '/framework/core/Loader.class.php',
+        'app\\controllers\\IndexController' => __DIR__ . '/../..' . '/app/controllers/IndexController.php',
+        'app\\controllers\\SiteController' => __DIR__ . '/../..' . '/app/controllers/SiteController.php',
+        'app\\model\\UserModel' => __DIR__ . '/../..' . '/app/models/UserModel.php',
+        'framework\\core\\Controller' => __DIR__ . '/../..' . '/framework/core/Controller.php',
         'framework\\core\\MainCore' => __DIR__ . '/../..' . '/framework/core/MainCore.php',
-        'framework\\core\\Model' => __DIR__ . '/../..' . '/framework/core/Model.class.php',
-        'framework\\core\\Mysql' => __DIR__ . '/../..' . '/framework/database/Mysql.class.php',
-        'framework\\core\\View' => __DIR__ . '/../..' . '/framework/core/View.class.php',
+        'framework\\core\\Model' => __DIR__ . '/../..' . '/framework/core/Model.php',
+        'framework\\core\\Mysql' => __DIR__ . '/../..' . '/framework/database/Mysql.php',
+        'framework\\core\\View' => __DIR__ . '/../..' . '/framework/core/View.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit745cfa768fe2cbb91acaa2077d71d037::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit745cfa768fe2cbb91acaa2077d71d037::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit745cfa768fe2cbb91acaa2077d71d037::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6cb8278a744a1214bfa163bf4da28738::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6cb8278a744a1214bfa163bf4da28738::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6cb8278a744a1214bfa163bf4da28738::$classMap;
 
         }, null, ClassLoader::class);
     }

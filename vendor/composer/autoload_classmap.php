@@ -6,12 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'app\\controllers\\IndexController' => $baseDir . '/app/controllers/IndexController.class.php',
-    'app\\model\\UserModel' => $baseDir . '/app/models/UserModel.class.php',
-    'framework\\core\\Controller' => $baseDir . '/framework/core/Controller.class.php',
-    'framework\\core\\Loader' => $baseDir . '/framework/core/Loader.class.php',
+    'app\\controllers\\IndexController' => $baseDir . '/app/controllers/IndexController.php',
+    'app\\controllers\\SiteController' => $baseDir . '/app/controllers/SiteController.php',
+    'app\\model\\UserModel' => $baseDir . '/app/models/UserModel.php',
+    'framework\\core\\Controller' => $baseDir . '/framework/core/Controller.php',
     'framework\\core\\MainCore' => $baseDir . '/framework/core/MainCore.php',
-    'framework\\core\\Model' => $baseDir . '/framework/core/Model.class.php',
-    'framework\\core\\Mysql' => $baseDir . '/framework/database/Mysql.class.php',
-    'framework\\core\\View' => $baseDir . '/framework/core/View.class.php',
+    'framework\\core\\Model' => $baseDir . '/framework/core/Model.php',
+    'framework\\core\\Mysql' => $baseDir . '/framework/database/Mysql.php',
+    'framework\\core\\View' => $baseDir . '/framework/core/View.php',
 );
