@@ -17,5 +17,6 @@
             "framework/core/MainCore.php"
         ],
         "psr-4": {"app\\": "app/"}
-    }
+    },"minimum-stability": "dev",
+    "prefer-stable": true
 }
